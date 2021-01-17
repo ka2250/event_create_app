@@ -7,15 +7,19 @@ function App() {
       <div className="container">
 
         {/* ヘッダー */}
-        <header className="mt-5">
-          <h4>Creat Event App</h4>
-          <p>using react hooks.</p>
+        <header className="mt-5 d-flex justify-content-between align-items-center">
+          <div>
+            <h4>Creat Event App</h4>
+            <p>using react hooks.</p>
+          </div>
+
+          <button className="btn btn-info btn-sm">Login</button>
         </header>
 
         {/* フォーム */}
         <form className="mt-4">
-          <label className="mr-2 font-weight-bold" for="input-event">create event</label>
-          <div class="d-flex justify-content-start">
+          <label className="mr-2" for="input-event">create event : </label>
+          <div class="d-flex justify-content-around">
             <input type="text" className="form-control" id="input-event" placeholder="input your event..." />
             <button type="button" class="btn btn-outline-secondary ml-3">Add</button>
           </div>
@@ -24,7 +28,7 @@ function App() {
         {/* イベントリスト */}
         <div className="event-list mt-5">
           <div className="d-flex justify-content-between mb-2">
-            <h5 className="font-weight-bold">Events</h5>
+            <h5>Events</h5>
             <button type="button" class="btn btn-danger btn-sm">DELETE EVENTS</button>
           </div>
           <table className="table table-hover">
@@ -59,7 +63,7 @@ function App() {
         {/* ログリスト */}
         <div className="log-list mt-5">
           <div className="d-flex justify-content-between mb-2">
-            <h5 className="font-weight-bold">Logs</h5>
+            <h5>Logs</h5>
             <button type="button" class="btn btn-secondary btn-sm">DELETE LOGS</button>
           </div>
           <table className="table table-hover">
