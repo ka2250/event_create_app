@@ -1,11 +1,11 @@
 import React from "react";
 
-const EventLogs = () => {
+const OperatedLogs = () => {
     return (
         <div className="log-list mt-5">
             <div className="d-flex justify-content-between mb-2">
                 <h5>Logs</h5>
-                <button type="button" class="btn btn-secondary btn-sm">DELETE LOGS</button>
+                <button type="button" className="btn btn-secondary btn-sm">DELETE LOGS</button>
             </div>
             <table className="table table-hover">
                 <thead>
@@ -37,4 +37,4 @@ const EventLogs = () => {
     );
 }
 
-export default EventLogs;
+export default OperatedLogs;
