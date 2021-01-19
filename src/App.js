@@ -2,8 +2,7 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';　// bootstrap読み込み
 
-import FormHeader from "./components/FormHeader";
-import Events from './components/Events';
+import FormAndList from "./components/FormAndList";
 import OperatedLogs from "./components/OperatedLogs";
 
 function App() {
@@ -11,8 +10,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <FormHeader />
-        <Events />
+        <FormAndList />
         <OperatedLogs />
       </div>
     </div>
