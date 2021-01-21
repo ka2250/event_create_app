@@ -31,7 +31,7 @@ const EventsList = () => {
                         type="button"
                         className="btn btn-danger btn-sm"
                         onClick={deleteAllEvent}
-                        disabled={state.length === 0}
+                        disabled={state.eventReducer.length === 0}
                     >DELETE EVENTS</button>
                 </div>
             </div>

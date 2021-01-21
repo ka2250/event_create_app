@@ -24,7 +24,7 @@ const OperatedLogsList = () => {
                     type="button"
                     className="btn btn-secondary btn-sm"
                     onClick={deleteAlloperationlogs}
-                    disabled={state.length === 0}
+                    disabled={state.operationReducer.length === 0}
                 >DELETE LOGS</button>
             </div>
             <table className="table table-hover">
