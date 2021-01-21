@@ -28,14 +28,12 @@ const Form = () => {
         <>
 
             <form className="mt-4">
-                <label className="mr-2" htmlFor="input-event">create event : </label>
                 <div className="d-flex justify-content-around">
                     <input
                         value={title}
                         onChange={e => setTitle(e.target.value)}
                         type="text"
                         className="form-control"
-                        id="input-event"
                         placeholder="input your event..."
                     />
                     <button
