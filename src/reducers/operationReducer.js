@@ -3,7 +3,7 @@ import {
     DELETE_ALL_OPERATION_LOGS
 } from "../actions";
 
-const operationReducer = (state, action) => {
+const operationReducer = (state = [], action) => {
     switch (action.type) {
         case ADD_OPERATION_LOG:
             const opeationLog = {
