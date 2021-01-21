@@ -13,6 +13,9 @@
    - useState
    - useReducer
    - useContext
-   
+
+- React Redux
+   - combineReducer
+
 - Bootstrap
 
