@@ -39,7 +39,7 @@ const OperatedLogsList = () => {
                 <tbody>
                     {
                         state.operationReducer.map((operationLog, index) => (
-                            <Operationlog index={index} operationLog={operationLog} />
+                            <Operationlog key={index} index={index} operationLog={operationLog} />
                         ))
 
                     }
