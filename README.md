@@ -1,6 +1,6 @@
 ## このリポジトリの概要
 
-### udemyの講座のリライト & カスタマイズ
+### udemyの講座のカスタマイズ
 
 - **udemy講座URL**
    [【はむ式】React Hooks 入門 - HooksとReduxを組み合わせて最新のフロントエンド状態管理手法を習得](https://www.udemy.com/user/ham-san/)
