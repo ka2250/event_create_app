@@ -2,9 +2,17 @@ import React, { useContext } from "react";
 import { DELETE_ALL_OPERATION_LOGS } from "../actions";
 import Operationlog from "./OperationLog";
 import AppContext from "../contexts/AppContext";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const OperatedLogsList = () => {
 	const { state, dispatch } = useContext(AppContext);
+
+	const { theme } = useContext(ThemeContext);
+
+	const style = {
+		backgroundColor: theme.background,
+		color: theme.color,
+	};
 
 	const deleteAlloperationlogs = (e) => {
 		e.preventDefault();
@@ -29,7 +37,7 @@ const OperatedLogsList = () => {
 					DELETE LOGS
 				</button>
 			</div>
-			<table className="table table-hover">
+			<table className="table table-hover" style={style}>
 				<thead>
 					<tr>
 						<th className="text-center">ID</th>
