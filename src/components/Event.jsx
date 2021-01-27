@@ -5,6 +5,7 @@ import { currentTime } from "../util";
 
 const Event = ({ event, index }) => {
 	const { dispatch } = useContext(AppContext);
+
 	const id = event.id;
 
 	const delleteEvent = (e) => {
@@ -30,7 +31,7 @@ const Event = ({ event, index }) => {
 			<td className="text-center">
 				<button
 					type="button"
-					class="btn btn-outline-danger btn-sm"
+					className="btn btn-outline-danger btn-sm"
 					onClick={delleteEvent}
 				>
 					DELETE
