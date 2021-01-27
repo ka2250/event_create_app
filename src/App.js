@@ -8,6 +8,7 @@ import Form from "./components/Form";
 import EventsList from "./components/EventsList";
 import OperatedLogsList from "./components/OperatedLogsList";
 import { ThemeContext } from "./contexts/ThemeContext";
+import "./style.css";
 
 function App() {
 	const initialState = {
