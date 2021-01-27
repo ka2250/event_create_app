@@ -3,9 +3,17 @@ import AppContext from "../contexts/AppContext";
 import Event from "./Event";
 import { currentTime } from "../util";
 import { ADD_OPERATION_LOG } from "../actions";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const EventsList = () => {
 	const { state, dispatch } = useContext(AppContext);
+
+	const { theme } = useContext(ThemeContext);
+
+	const style = {
+		backgroundColor: theme.background,
+		color: theme.color,
+	};
 
 	const deleteAllEvent = (e) => {
 		e.preventDefault();
@@ -38,7 +46,7 @@ const EventsList = () => {
 				</div>
 			</div>
 
-			<table className="table table-hover">
+			<table className="table table-hover" style={style}>
 				<thead>
 					<tr>
 						<th className="text-center">ID</th>

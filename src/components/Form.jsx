@@ -17,7 +17,7 @@ const Form = () => {
 		});
 		dispatch({
 			type: ADD_OPERATION_LOG,
-			description: `イベントを作成しました`,
+			description: `「${title}」イベントを作成しました`,
 			operatedAt: currentTime(),
 		});
 		setTitle("");
